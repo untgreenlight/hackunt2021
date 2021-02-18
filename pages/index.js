@@ -11,6 +11,9 @@ export default function Home() {
   const BuildingRight = assets.building4
   return (
     <Wrapper>
+      <style>
+        {`@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');`}
+      </style>
       <BuildingWrapper BuildingLeft={BuildingLeft} BuildingRight={BuildingRight}>
         <Header />
         <About />
