@@ -1,29 +1,45 @@
 import React from "react";
 import styled from "styled-components";
+import Image from "next/image"
 
-const BuildingWrapper = ({ Building1, Building2, children }) => {
+const BuildingWrapper = ({ BuildingRight, BuildingLeft, children }) => {
   return (
     <Wrapper>
-      <div>
-        <Building1 />
-      </div>
       <ChildrenWrapper>{children}</ChildrenWrapper>
-      <div>
-        <Building2 />
-      </div>
-    </Wrapper>
+      <Foreground>
+          <Building>
+            <BuildingLeft style={{ position: 'absolute', bottom: 0,}}/>
+          </Building>
+          <Building>
+            <BuildingRight style={{ position: 'absolute', bottom: 0,}}/>
+          </Building>
+      </Foreground>
+  </Wrapper>
   );
 };
 export default BuildingWrapper;
 
 const Wrapper = styled.div`
+  height: 100%;
   display: flex;
-  flex-direction: row;
-  flex: 1;
+  flex-flow: row nowrap;
 `;
 
 const ChildrenWrapper = styled.div`
-  flex: 1;
-  display: flex;
-  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  flex: none;
 `;
+
+const Building = styled.div`
+  width: 50%;
+  position: relative;
+`
+
+const Foreground = styled.div`
+  box-sizing: border-box;
+  width: 100%;
+  flex: none;
+  display: flex;
+  margin-left: -100%;
+`

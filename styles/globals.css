@@ -20,3 +20,8 @@ a {
 * {
   box-sizing: border-box;
 }
+
+svg > image {
+  width: 100%;
+  height: 100%;
+}
