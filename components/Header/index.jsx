@@ -70,7 +70,7 @@ const DateInfo = styled.h1`
   text-shadow: 2px 2px black;
 `
 
-const Card = styled.div`
+export const Card = styled.div`
   padding: 30px;
   background-color: #C38ECD;
   box-shadow: 10px 10px #a455b4;

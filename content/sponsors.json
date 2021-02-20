@@ -1,0 +1,72 @@
+[
+   {
+      "name": "American Airlines",
+      "image": "/sponsors/aa_wordmark.png",
+      "link": "https://jobs.aa.com/"
+   },
+   {
+      "name": "State Farm",
+      "image": "/sponsors/statefarm.png",
+      "link": "https://www.statefarm.com/"
+   },
+   {
+      "name": "balsamiq",
+      "image": "/sponsors/balsamiq-logo-noborder-screen.svg",
+      "link": "https://balsamiq.com/"
+   },
+   {
+      "name": "Wolfram",
+      "image": "/sponsors/wolfram.png",
+      "link": "https://www.wolfram.com/"
+   },
+   {
+      "name": "Stoke",
+      "image": "/sponsors/stoke.png",
+      "link": "https://stokedenton.com/"
+   },
+   {
+      "name": "RESPEC",
+      "image": "/sponsors/respec.png",
+      "link": "https://www.respec.com/"
+   },
+   {
+      "name": "NSA",
+      "image": "/sponsors/NSA.png",
+      "link": "https://www.NSA.gov"
+   },
+   {
+      "name": "UNT Transportation Services",
+      "image": "/sponsors/transportation.png",
+      "link": "https://transportation.unt.edu/"
+   },
+   {
+      "name": "PwC",
+      "image": "/sponsors/pwc.png",
+      "link": "https://www.pwc.com/"
+   },
+   {
+      "name": "Crestron",
+      "image": "/sponsors/crestron.png",
+      "link": "https://www.crestron.com/"
+   },
+   {
+      "name": "GitHub",
+      "image": "/sponsors/GitHub_Logo_White.png",
+      "link": "https://github.com/"
+   },
+   {
+      "name": "Potbelly",
+      "image": "/sponsors/potbelly.png",
+      "link": "https://www.potbelly.com/"
+   },
+   {
+      "name": "The Halal Guys",
+      "image": "/sponsors/halal.png",
+      "link": "https://thehalalguys.com/"
+   },
+   {
+      "name": "Pokey O's",
+      "image": "/sponsors/pokeyo.png",
+      "link": "https://www.pokeyos.com/"
+   }
+]

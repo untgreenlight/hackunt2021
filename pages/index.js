@@ -5,6 +5,7 @@ import Sponsors from "../components/Sponsors";
 import BuildingWrapper from "../components/BuildingWrapper";
 import assets from "../components/Buildings";
 import styled from "styled-components";
+import Roundup from "../components/Roundup";
 
 export default function Home() {
   const BuildingLeft = assets.building7
@@ -17,7 +18,7 @@ export default function Home() {
       <BuildingWrapper BuildingLeft={BuildingLeft} BuildingRight={BuildingRight}>
         <Header />
         <About />
-        <Sponsors />
+        <Roundup />
       </BuildingWrapper>
     </Wrapper>
   )
