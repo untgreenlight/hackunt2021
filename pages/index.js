@@ -17,7 +17,7 @@ export default function Home() {
       </style>
       <BuildingWrapper BuildingLeft={BuildingLeft} BuildingRight={BuildingRight} background={true}>
         <Header />
-        <About />
+        {/* <About /> */}
         <Roundup />
       </BuildingWrapper>
     </Wrapper>

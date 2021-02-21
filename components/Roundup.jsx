@@ -2,13 +2,25 @@ import React from "react";
 import styled from "styled-components";
 import sponsors from "../content/sponsors.json";
 import assets from "./Buildings";
+import BuildingWrapper from "./BuildingWrapper";
 import { Card } from "./Header";
+import About from "./About";
+
+const Bottom = assets.building9;
 
 const Roundup = () => {
   return (
     <Wrapper>
-      <BuildingWrapper BuildingLeft={assets.building9} BuildingRight={assets.building4}>
-        <Column>
+      <Column>
+        <BuildingWrapper
+          style={{ width: "100%" }}
+          blur={0.2}
+          BuildingLeft={assets.building2}
+          BuildingRight={assets.building1}
+          Bottom={Bottom}
+          background={false}
+        >
+          <About />
           <Label>HackUNT Recap</Label>
           <StaggerColumn>
             <Card>
@@ -41,25 +53,38 @@ const Roundup = () => {
           <Item>RoadFocus</Item>
           <Item>Respec Slack Lunchbot</Item>
           <Item>OptiState</Item>
-          <br />
+
           <LogoWrapper>
-            <Label>2020 Sponsors</Label>
+            <Label>2020 Title Sponsors</Label>
 
             {/* <p>Interested in <a href='/2020_Sponsorship_Doc.pdf' style={{ color: 'rgb(49, 199, 69)', textDecoration: 'underline' }}>sponsoring</a> 2020?</p> */}
-            <Bigger>
-              <Logos>
-                {sponsors.slice(0, 2).map((sponsor, i) => (
-                  <a key={`sponsor_${i}`} href={sponsor.link}>
-                    <SponsorLogo
-                      style={{ backgroundImage: `url(${sponsor.image})` }}
-                      alt={sponsor.name}
-                    />
-                  </a>
-                ))}
-              </Logos>
-            </Bigger>
+            <BuildingWrapper BuildingRight={assets.building6}>
+              <Bigger>
+                <Logos>
+                  {sponsors.slice(0, 2).map((sponsor, i) => (
+                    <a key={`sponsor_${i}`} href={sponsor.link}>
+                      <SponsorLogo
+                        style={{ backgroundImage: `url(${sponsor.image})` }}
+                        alt={sponsor.name}
+                      />
+                    </a>
+                  ))}
+                </Logos>
+              </Bigger>
+            </BuildingWrapper>
+          </LogoWrapper>
+        </BuildingWrapper>
+        <br />
+        <BuildingWrapper
+          blur={0.1}
+          BuildingLeft={assets.building1}
+          BuildingRight={assets.building2}
+          Bottom={Bottom}
+        >
+          <LogoWrapper>
+            {/* abc */}
 
-            <Label>Other Sponsors</Label>
+            <Label>2020 Sponsors</Label>
             <Logos style={{ marginTop: 0 }}>
               {sponsors.slice(2).map((sponsor, i) => (
                 <a key={`other_sponsor_${i}`} href={sponsor.link}>
@@ -73,8 +98,8 @@ const Roundup = () => {
           </LogoWrapper>
           <br />
           <br />
-        </Column>
-      </BuildingWrapper>
+        </BuildingWrapper>
+      </Column>
     </Wrapper>
   );
 };
@@ -90,7 +115,6 @@ const StaggerColumn = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1000px;
   > div:nth-child(odd) {
     transform: translate(200px);
     margin: 64px 0;
@@ -104,16 +128,19 @@ const Column = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1600px;
 `;
 
 const Label = styled.h2`
   font-size: 64px;
+  text-align: center;
+  z-index: 100;
 `;
 
 const Item = styled.p`
   font-size: 32px;
   margin: 0 0 16px 0;
+  text-align: center;
+  z-index: 100;
 `;
 
 const LogoWrapper = styled.div`
@@ -148,5 +175,3 @@ const Logos = styled.div`
   flex-wrap: wrap;
   justify-content: center;
 `;
-
-const BuildingWrapper = styled.div``;

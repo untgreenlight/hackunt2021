@@ -9,7 +9,7 @@ const About = () => {
 
   return (
       <Root>
-        <BuildingWrapper BuildingLeft={assets.building2} BuildingRight={assets.building1} background={false}>
+        {/* <BuildingWrapper BuildingLeft={assets.building2} BuildingRight={assets.building1} background={false} blur={0.2}> */}
         <Container>
           <Card>
             <Paragraph>
@@ -17,14 +17,13 @@ const About = () => {
             </Paragraph>
           </Card>
         </Container>
-        </BuildingWrapper>
+        {/* </BuildingWrapper> */}
       </Root>
   );
 };
 export default About;
 
 const Root = styled.div`
-  height: 100vh;
   display: flex;
   flex-direction: column;
   padding: 10vh;
@@ -40,6 +39,7 @@ const Card = styled.div`
   box-shadow: 10px 10px #a455b4;
   margin: 20px;
   width: 30%;
+  z-index: 100;
 `
 
 const Container = styled.div`
