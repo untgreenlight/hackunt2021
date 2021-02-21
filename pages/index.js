@@ -14,7 +14,7 @@ export default function Home() {
       <style>
         {`@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');`}
       </style>
-      <BuildingWrapper BuildingLeft={BuildingLeft} BuildingRight={BuildingRight}>
+      <BuildingWrapper BuildingLeft={BuildingLeft} BuildingRight={BuildingRight} background={true}>
         <Header />
         <About />
         <Sponsors />
