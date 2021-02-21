@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Image from "next/image";
 
 const BuildingWrapper = ({
   BuildingRight,
@@ -14,27 +13,51 @@ const BuildingWrapper = ({
   return background ? (
     <Wrapper style={style}>
       <BackgroundChildren>{children}</BackgroundChildren>
-      <ForegroundBuilding style={{ zIndex: 1, filter: blur ? `blur(${blur}rem)` : undefined }}>
+      <ForegroundBuilding
+        style={{ zIndex: 1, filter: blur ? `blur(${blur}rem)` : undefined }}
+      >
         <Building>
-          <BuildingLeft style={{ position: "absolute", bottom: 0 }} />
+          {BuildingLeft && (
+            <BuildingLeft style={{ position: "absolute", bottom: 0 }} />
+          )}
         </Building>
         <Building>
           <BuildingRight style={{ position: "absolute", bottom: 0 }} />
         </Building>
       </ForegroundBuilding>
-      {Bottom && <Bottom style={{ position: "absolute", bottom: 0, filter: blur ? `blur(${blur}rem)` : undefined }} />}
+      {Bottom && (
+        <Bottom
+          style={{
+            position: "absolute",
+            bottom: 0,
+            filter: blur ? `blur(${blur}rem)` : undefined,
+          }}
+        />
+      )}
     </Wrapper>
   ) : (
     <Wrapper style={style}>
-      <BackgroundBuilding style={{ filter: blur ? `blur(${blur}rem)` : undefined }}>
+      <BackgroundBuilding
+        style={{ filter: blur ? `blur(${blur}rem)` : undefined }}
+      >
         <Building>
-          <BuildingLeft style={{ position: "absolute", bottom: 0 }} />
+          {BuildingLeft && (
+            <BuildingLeft style={{ position: "absolute", bottom: 0 }} />
+          )}
         </Building>
         <Building>
           <BuildingRight style={{ position: "absolute", bottom: 0 }} />
         </Building>
       </BackgroundBuilding>
-      {Bottom && <Bottom style={{ position: "absolute", bottom: 0, filter: blur ? `blur(${blur}rem)` : undefined }} />}
+      {Bottom && (
+        <Bottom
+          style={{
+            position: "absolute",
+            bottom: 0,
+            filter: blur ? `blur(${blur}rem)` : undefined,
+          }}
+        />
+      )}
       <ForegroundChildren style={{ zIndex: 1 }}>{children}</ForegroundChildren>
     </Wrapper>
   );

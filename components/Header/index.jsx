@@ -4,7 +4,6 @@ import styled from "styled-components";
 import Image from "next/image";
 import AwesomeSlider from "react-awesome-slider";
 import "react-awesome-slider/dist/styles.css";
-import Roundup from "../Roundup";
 
 const Header = () => {
   return (

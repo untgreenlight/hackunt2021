@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import BuildingWrapper from "../BuildingWrapper";
-import assets from "../Buildings"
+// import BuildingWrapper from "../BuildingWrapper";
+// import assets from "../Buildings"
 
 
 const About = () => {

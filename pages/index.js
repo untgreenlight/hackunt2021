@@ -1,7 +1,4 @@
-import About from "../components/About";
 import Header from "../components/Header";
-import Sponsors from "../components/Sponsors";
-// import BuildingRoot from "../components/Building"
 import BuildingWrapper from "../components/BuildingWrapper";
 import assets from "../components/Buildings";
 import styled from "styled-components";
