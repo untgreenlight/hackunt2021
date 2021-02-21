@@ -16,7 +16,7 @@ const Header = () => {
         <FloatDown>
           <StyledSlider>
               {[...new Array(15)].map((_, i) => (
-                  <div data-src={`/2020/${i + 1}.jpg`}/>
+                  <div key={i} data-src={`/2020/${i + 1}.jpg`}/>
               ))}
           </StyledSlider>
         </FloatDown>
