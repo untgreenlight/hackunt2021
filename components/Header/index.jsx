@@ -10,7 +10,7 @@ const Header = () => {
     <Root>
       <ImageWrapper>
         <Image
-          src={"/templogo.png"}
+          src={"/logo.png"}
           layout="responsive"
           height="400"
           width="400"

@@ -7,12 +7,14 @@ import Roundup from "../components/Roundup";
 export default function Home() {
   const BuildingLeft = assets.building7
   const BuildingRight = assets.building4
+  const Bottom = assets.building9;
+
   return (
     <Wrapper>
       <style>
         {`@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');`}
       </style>
-      <BuildingWrapper BuildingLeft={BuildingLeft} BuildingRight={BuildingRight} background={true}>
+      <BuildingWrapper BuildingLeft={BuildingLeft} BuildingRight={BuildingRight} background={true} Bottom={Bottom} height={400}>
         <Header />
         {/* <About /> */}
         <Roundup />

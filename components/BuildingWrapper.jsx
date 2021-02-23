@@ -9,6 +9,7 @@ const BuildingWrapper = ({
   background,
   style,
   blur,
+  height,
 }) => {
   return background ? (
     <Wrapper style={style}>
@@ -18,11 +19,11 @@ const BuildingWrapper = ({
       >
         <Building>
           {BuildingLeft && (
-            <BuildingLeft style={{ position: "absolute", bottom: 0 }} />
+            <BuildingLeft style={{ position: "absolute", bottom: 0, height: `${height}vh` }} />
           )}
         </Building>
         <Building>
-          <BuildingRight style={{ position: "absolute", bottom: 0 }} />
+          <BuildingRight style={{ position: "absolute", bottom: 0, right: 0, height: `${height}vh`}} />
         </Building>
       </ForegroundBuilding>
       {Bottom && (
@@ -42,11 +43,11 @@ const BuildingWrapper = ({
       >
         <Building>
           {BuildingLeft && (
-            <BuildingLeft style={{ position: "absolute", bottom: 0 }} />
+            <BuildingLeft style={{ position: "absolute", bottom: 0, height: `${height}vh` }} />
           )}
         </Building>
         <Building>
-          <BuildingRight style={{ position: "absolute", bottom: 0 }} />
+          <BuildingRight style={{ position: "absolute", bottom: 0, right: 0, height: `${height}vh` }} />
         </Building>
       </BackgroundBuilding>
       {Bottom && (
@@ -72,6 +73,7 @@ const Wrapper = styled.div`
   svg {
     z-index: 0;
   }
+  overflow: hidden;
 `;
 
 const BackgroundChildren = styled.div`
