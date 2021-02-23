@@ -12,31 +12,31 @@ const FAQ = () => {
         </InverseCard>
         <Row>
             <StyledCard>
-                <Label>What is a Hackathon?</Label>
+                <SmolLabel>What is a Hackathon?</SmolLabel>
                 <Paragraph>A Hackathon is a programming marathon, where teams of 1-4 put their ideas together to create something exciting in only 24 hours. It gives teams of creators a chance to turn their ideas into reality.</Paragraph>
             </StyledCard>
             <StyledCard>
-                <Label>How long is HackUNT?</Label>
+                <SmolLabel>How long is HackUNT?</SmolLabel>
                 <Paragraph>HackUNT 2021 is from Saturday March 13th to Sunday March 14th. Students will be hacking for 24 hours.</Paragraph>
             </StyledCard>
             <StyledCard>
-                <Label>Who can attend?</Label>
+                <SmolLabel>Who can attend?</SmolLabel>
                 <Paragraph>To attend as a hacker, you need to be a student and at least 18 years old. If you're not 18 yet, go check out <a class="green" href="https://hacktams.org">hackTAMS</a>!</Paragraph>
             </StyledCard>
             <StyledCard>
-                <Label>Who is accepted?</Label>
+                <SmolLabel>Who is accepted?</SmolLabel>
                 <Paragraph>UNT students get automatic acceptance. Applicants from other schools will get randomly selected. Don't worry if you haven't heard back, we send out acceptances in waves.</Paragraph>
             </StyledCard>
             <StyledCard>
-                <Label>Any Rules?</Label>
+                <SmolLabel>Any Rules?</SmolLabel>
                 <Paragraph>All work must be done at HackUNT 2021. We also adhere by MLH's Code of Conduct, which you can find here.</Paragraph>
             </StyledCard>
             <StyledCard>
-                <Label>Got more questions?</Label>
+                <SmolLabel>Got more questions?</SmolLabel>
                 <Paragraph>Reach out to us at <a class="green" href="mailto:officialhackunt@gmail.com">officialhackunt@gmail.com</a> with your questions!</Paragraph>
             </StyledCard>
             <StyledCard>
-                <Label>What about COVID?</Label>
+                <SmolLabel>What about COVID?</SmolLabel>
                 <Paragraph>HackUNT 2021 is completely virtual this year! But don't worry, there will be plenty of opportunities to engage with other hackers and mentors at the event!</Paragraph>
             </StyledCard>
         </Row>
@@ -102,6 +102,13 @@ const Logos = styled.div`
 
 const Label = styled.h2`
   font-size: 64px;
+  text-align: center;
+  z-index: 100;
+  margin: 0;
+`;
+
+const SmolLabel = styled.h2`
+  font-size: 30px;
   text-align: center;
   z-index: 100;
   margin: 0;
