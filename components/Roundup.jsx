@@ -12,7 +12,6 @@ const Roundup = () => {
   return (
     <Wrapper>
       <Column>
-        <About />
         <InverseCard>
           <Label>HackUNT Recap</Label>
         </InverseCard>
@@ -73,6 +72,7 @@ const Wrapper = styled.div`
   flex: 1;
   display: flex;
   justify-content: center;
+  padding: 10vh;
 `;
 
 const StaggerColumn = styled.div`

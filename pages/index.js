@@ -4,6 +4,8 @@ import assets from "../components/Buildings";
 import styled from "styled-components";
 import Roundup from "../components/Roundup";
 import Sponsors from "../components/Sponsors";
+import FAQ from "../components/FAQ";
+import About from "../components/About"
 
 export default function Home() {
   const BuildingLeft = assets.building7
@@ -15,19 +17,19 @@ export default function Home() {
       <style>
         {`@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');`}
       </style>
-      <BuildingWrapper BuildingLeft={BuildingLeft} BuildingRight={BuildingRight} background={false} Bottom={Bottom} height={400}>
+      <BuildingWrapper BuildingLeft={BuildingLeft} BuildingRight={BuildingRight} background={false} Bottom={Bottom} height={700}>
         <Header />
-        {/* <About /> */}
+        <About />
         <BuildingWrapper
-          style={{ width: "100%" }}
-          blur={0.2}
           BuildingLeft={assets.building2}
           BuildingRight={assets.building1}
           Bottom={assets.building9}
           background={false}
+          height={400}
         >
+          <FAQ />
           <Roundup />
-          <BuildingWrapper BuildingLeft={assets.building8} BuildingRight={assets.building1} background={false}>
+          <BuildingWrapper BuildingLeft={assets.building8} BuildingRight={assets.building1} background={false} height={200}>
             <Sponsors />
           </BuildingWrapper>
         </BuildingWrapper>

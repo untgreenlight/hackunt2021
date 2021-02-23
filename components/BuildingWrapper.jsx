@@ -31,7 +31,8 @@ const BuildingWrapper = ({
           style={{
             position: "absolute",
             bottom: 0,
-            filter: blur ? `blur(${blur}rem)` : undefined,
+            // filter: blur ? `blur(${blur}rem)` : undefined,
+            filter: .2,
           }}
         />
       )}
@@ -55,7 +56,8 @@ const BuildingWrapper = ({
           style={{
             position: "absolute",
             bottom: 0,
-            filter: blur ? `blur(${blur}rem)` : undefined,
+            // filter: blur ? `blur(${blur}rem)` : undefined,
+            filter: `blur(.2rem)`,
           }}
         />
       )}

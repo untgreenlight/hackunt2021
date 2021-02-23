@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import { Card, InverseCard } from "../Header";
 // import BuildingWrapper from "../BuildingWrapper";
 // import assets from "../Buildings"
 
@@ -9,15 +10,21 @@ const About = () => {
 
   return (
       <Root>
-        {/* <BuildingWrapper BuildingLeft={assets.building2} BuildingRight={assets.building1} background={false} blur={0.2}> */}
+        <Wrapper>
+        <InverseCard>
+          <Label>What is HackUNT?</Label>
+        </InverseCard>
         <Container>
-          <Card>
+          <StyledCard>
             <Paragraph>
               HackUNT is the University of North Texas' annual hackathon. A hackathon is a 24-hour development competition for coders, designers, and anyone with a good idea! Don't worry if you aren't experienced either, HackUNT is a great place to learn! We will have mentors and professionals from the industry to help along the way.
             </Paragraph>
-          </Card>
+          </StyledCard>
+          <StyledCard>
+            <Label>We've gone virtual!</Label>
+          </StyledCard>
         </Container>
-        {/* </BuildingWrapper> */}
+        </Wrapper>
       </Root>
   );
 };
@@ -29,17 +36,17 @@ const Root = styled.div`
   padding: 10vh;
 `;
 
+const Wrapper = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 10;
+  align-items: center;
+`;
+
 const Paragraph = styled.p`
   font-size: large;
-`
-
-const Card = styled.div`
-  padding: 30px;
-  background-color: #C38ECD;
-  box-shadow: 10px 10px #a455b4;
-  margin: 20px;
-  width: 30%;
-  z-index: 100;
 `
 
 const Container = styled.div`
@@ -49,4 +56,14 @@ const Container = styled.div`
   align-items: flex-end;
   justify-items: center;
   justify-content: center;
+`
+const Label = styled.h2`
+  font-size: 64px;
+  text-align: center;
+  z-index: 100;
+  margin: 0;
+`;
+
+const StyledCard = styled(Card)`
+  max-width: 50%;
 `

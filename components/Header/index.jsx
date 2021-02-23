@@ -28,7 +28,9 @@ const Header = () => {
         <FloatUp>
           <Card>
             <DateInfo>March 13 - 14, 2021</DateInfo>
-            <Button>Register</Button>
+            <a href="https://hackunt.typeform.com/to/DlhVc6de" target="_blank" rel="noopener noreferrer">
+              <Button>Register</Button>
+            </a>
           </Card>
         </FloatUp>
       </Container>

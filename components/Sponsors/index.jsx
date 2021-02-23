@@ -52,6 +52,7 @@ const Sponsors = () => {
 const Root = styled.div`
   display: flex;
   flex-direction: column;
+  padding: 10vh;
 `;
 
 const LogoWrapper = styled.div`
