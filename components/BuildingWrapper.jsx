@@ -80,6 +80,7 @@ const BackgroundChildren = styled.div`
   box-sizing: border-box;
   width: 100%;
   flex: none;
+  z-index: 100;
 `;
 
 const Building = styled.div`
@@ -107,4 +108,5 @@ const ForegroundChildren = styled.div`
   width: 100%;
   flex: none;
   margin-left: -100%;
+  z-index: 100;
 `;

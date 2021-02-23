@@ -80,6 +80,14 @@ export const Card = styled.div`
   box-shadow: 10px 10px #a455b4;
   margin: 20px;
 `;
+
+export const InverseCard = styled.div`
+  padding: 30px;
+  background-color: #a455b4;
+  box-shadow: 10px 10px #c38ecd;
+  margin: 20px;
+`;
+
 const Button = styled.button`
   background-color: #f18e7e;
   padding: 15px 32px;

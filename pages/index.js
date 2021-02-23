@@ -3,6 +3,7 @@ import BuildingWrapper from "../components/BuildingWrapper";
 import assets from "../components/Buildings";
 import styled from "styled-components";
 import Roundup from "../components/Roundup";
+import Sponsors from "../components/Sponsors";
 
 export default function Home() {
   const BuildingLeft = assets.building7
@@ -14,10 +15,22 @@ export default function Home() {
       <style>
         {`@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');`}
       </style>
-      <BuildingWrapper BuildingLeft={BuildingLeft} BuildingRight={BuildingRight} background={true} Bottom={Bottom} height={400}>
+      <BuildingWrapper BuildingLeft={BuildingLeft} BuildingRight={BuildingRight} background={false} Bottom={Bottom} height={400}>
         <Header />
         {/* <About /> */}
-        <Roundup />
+        <BuildingWrapper
+          style={{ width: "100%" }}
+          blur={0.2}
+          BuildingLeft={assets.building2}
+          BuildingRight={assets.building1}
+          Bottom={assets.building9}
+          background={false}
+        >
+          <Roundup />
+          <BuildingWrapper BuildingLeft={assets.building8} BuildingRight={assets.building1} background={false}>
+            <Sponsors />
+          </BuildingWrapper>
+        </BuildingWrapper>
       </BuildingWrapper>
     </Wrapper>
   )
