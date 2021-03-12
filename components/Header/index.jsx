@@ -34,6 +34,12 @@ const Header = () => {
           </Card>
         </FloatUp>
       </Container>
+      <Card style={{ marginTop: '50px', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+        <DateInfo> Schedule, Livestream, and Challenge Info!</DateInfo>
+        <a href="https://asterisk.events/site/hackunt" target="_blank" rel="noopener noreferrer">
+          <Button>Live Site</Button>
+        </a>
+      </Card>
     </Root>
   );
 };

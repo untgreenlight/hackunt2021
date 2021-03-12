@@ -28,9 +28,9 @@ export default function Home() {
           height={400}
         >
           <FAQ />
-          <Roundup />
+          <Sponsors />
           <BuildingWrapper BuildingLeft={assets.building8} BuildingRight={assets.building1} background={false} height={200}>
-            <Sponsors />
+            <Roundup />
           </BuildingWrapper>
         </BuildingWrapper>
       </BuildingWrapper>

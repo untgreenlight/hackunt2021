@@ -3,11 +3,9 @@ import styled from "styled-components";
 import sponsors from "../../content/sponsors.json";
 import { Card, InverseCard } from "../Header";
 
-const Sponsors = () => {
-  return (
-    <Root>
-      <LogoWrapper>{/* </BuildingWrapper> */}</LogoWrapper>
-      <LogoWrapper>
+const recap21 = () => (
+  <>
+  <LogoWrapper>
         <InverseCard>
           <Label>2020 Title Sponsors</Label>
         </InverseCard>
@@ -44,6 +42,35 @@ const Sponsors = () => {
             </Card>
           ))}
         </Logos>
+      </LogoWrapper>
+    </>
+)
+
+const Sponsors = () => {
+  return (
+    <Root>
+      <LogoWrapper>{/* </BuildingWrapper> */}</LogoWrapper>
+      <LogoWrapper>
+        <InverseCard>
+          <Label>2021 Sponsor</Label>
+        </InverseCard>
+        <Bigger>
+          <Logos>
+              <Card>
+                <a key={`streamsum`} href={'https://www.streamsum.com/'} target='blank'>
+                  <SponsorLogo
+                    style={{ backgroundImage: `url(/sponsors/streamsum.png)` }}
+                    alt={'StreamSum'}
+                  />
+                </a>
+              </Card>
+          </Logos>
+          <Card>
+            <Paragraph>
+              StreamSum is a Dallas based live stream analytics and advertising company, helping brands reach streamers easier and enabling content creators to earn passive income doing what they love.
+            </Paragraph>
+          </Card>
+        </Bigger>
       </LogoWrapper>
     </Root>
   );
@@ -94,5 +121,9 @@ const Label = styled.h2`
   z-index: 100;
   margin: 0;
 `;
+
+const Paragraph = styled.p`
+  font-size: 24px;
+`
 
 export default Sponsors;
